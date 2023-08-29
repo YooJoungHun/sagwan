@@ -1,0 +1,15 @@
+server:
+  port: 8081
+  
+spring:
+
+  mvc:
+    #HttpHiddenMethod 사용 설정
+    hiddenmethod:
+      filter:
+        enabled: true
+  
+  #view resolver 설정  
+  thymeleaf:
+    prefix: classpath:/tamplates
+    
