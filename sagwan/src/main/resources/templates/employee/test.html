@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"> 
 <head>
 <meta charset="utf-8">
 <title>Insert title here</title>
 </head>
 <body>
-
+	<h1>성공</h1>
+	<form method="get" action="/dept">
+		<input name="deptCode" type="text">
+		<input name="deptName" type="text">
+		<input name="isuedDate" type="text">
+		<button class="btn">적용</button>
+	</form>
 </body>
 </html>
