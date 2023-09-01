@@ -20,7 +20,7 @@ public class SecurityConfig {
 					//인증 허용 범위 설정
 					.authorizeRequests()
 						.antMatchers("/img/**", "/css/**", "/js/**", "/fonts/**", "/scss/**").permitAll() //static resources 인증 제외
-						.antMatchers("/login", "/signup").permitAll() //로그인 페이지, 권한 부족 페이지, 메인페이지 인증 제외
+						.antMatchers("/login", "/signup", "/").permitAll() //로그인 페이지, 권한 부족 페이지, 메인페이지 인증 제외
 //						.antMatchers(HttpMethod.POST, "/**").hasAnyRole("ADMIN", "MANAGER") // POST 요청은 ADMIN과 MANAGER 역할을 가진 사용자 모두 접근 가능
 //						.antMatchers(HttpMethod.PUT, "/**").hasAnyRole("ADMIN", "MANAGER") // PUT 요청은 ADMIN과 MANAGER 역할을 가진 사용자 모두 접근 가능
 //						.antMatchers(HttpMethod.DELETE, "/**").hasAnyRole("ADMIN", "MANAGER") // DELETE 요청은 ADMIN과 MANAGER 역할을 가진 사용자 모두 접근 가능
