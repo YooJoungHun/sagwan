@@ -8,5 +8,7 @@
  	
  	<typeAliases>
  		<typeAlias alias="DeptDto" type="com.elonsoft.sagwan.dtos.DeptDto"/>
+ 		<typeAlias alias="EmpDto" type="com.elonsoft.sagwan.dtos.EmpDto"/>
  	</typeAliases>
+ 	
  </configuration>
